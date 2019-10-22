@@ -126,10 +126,27 @@ h1 {
   font-size: 1.25em;
 }
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+hr {
+  display: none;
+}
+@media (min-width: 500px) {
+  hr {
+    display: block;
+  }
 }
 .container {
-  min-width: 300px;
+  min-width: 200px;
   margin: 10px;
 }
 nav {
@@ -140,42 +157,13 @@ nav {
   padding-top: 10px;
   background-color: #e8e8eb;
 }
-@media (min-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    top: 0px;
-    padding: 10px;
-    border-bottom: black solid 1px;
-  }
-}
-.navdiv1 {
-  width: 100%;
-}
-@media (min-width: 600px) {
-  .navdiv1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-.navdiv2 {
-  width: 100%;
-}
-@media (min-width: 600px) {
-  .navdiv2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-}
 nav h1 {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
   border-bottom: solid 1px black;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   nav h1 {
     border-bottom: none;
     padding-bottom: 0px;
@@ -192,7 +180,7 @@ nav a {
   padding-bottom: 10px;
   border-bottom: solid 1px black;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   nav a {
     border-bottom: none;
     padding-top: 0px;
@@ -200,40 +188,151 @@ nav a {
     padding-left: 15px;
   }
 }
+@media (min-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    padding: 10px;
+    border-bottom: black solid 1px;
+  }
+}
+.navdiv1 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.navdiv2 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
   padding: 10px;
+  margin-top: 25px;
   border-top: 1px solid black;
   font-size: 1em;
   background-color: #e8e8eb;
 }
 header {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.teammember {
-  width: 100%;
+.teammemberA {
   display: flex;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 15px;
-  border-bottom: solid black 1px;
-}
-.teamimage {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 28%;
-  margin: 1%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
-.teamintro {
-  width: 70%;
-  margin: 1%;
+.teammemberA img {
+  width: 30vh;
+  border-radius: 7px;
 }
-.teamimage img {
-  width: 25vh;
+@media (min-width: 500px) {
+  .teammemberA .teamintro {
+    width: 70%;
+    margin: 1%;
+  }
+}
+.teammemberA .teamimage {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (min-width: 500px) {
+  .teammemberA .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) {
+  .teammemberA {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
+    border-bottom: black solid 1px;
+  }
+}
+@media (min-width: 1000px) {
+  .teammemberA {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+.teammemberB {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.teammemberB img {
+  width: 30vh;
+  border-radius: 7px;
+}
+@media (min-width: 500px) {
+  .teammemberB .teamintro {
+    width: 70%;
+    margin: 1%;
+  }
+}
+.teammemberB .teamimage {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+@media (min-width: 500px) {
+  .teammemberB .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) {
+  .teammemberB {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
+    border-bottom: black solid 1px;
+  }
+}
+@media (min-width: 1000px) {
+  .teammemberB {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+#daniel {
+  border-bottom: none;
 }

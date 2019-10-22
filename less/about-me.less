@@ -1,30 +1,113 @@
 header {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.teammember{
-    width: 100%;
+.teammemberA{
     display: flex;
-    .sectionspace();
-}
-
-.teamimage {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 28%;
-    margin: 1%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    img{
+        width: 30vh;
+        border-radius: 7px;
+    }
+
+    .teamintro {
+
+        @media @tablet {
+            width: 70%;
+            margin: 1%
+        }
+    }
+
+    .teamimage {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        @media @tablet {
+            margin: 1%;
+            width: 28%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: row;
+        .sectionspace();
+    }
+
+    @media @desktop {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
-.teamintro {
-    width: 70%;
-    margin: 1%;
+.teammemberB{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+
+    img{
+        width: 30vh;
+        border-radius: 7px;
+    }
+
+    .teamintro {
+
+        @media @tablet {
+            width: 70%;
+            margin: 1%
+        }
+    }
+
+    .teamimage {
+        margin-bottom: 25px;
+        margin-top: 25px;
+
+        @media @tablet {
+            margin: 1%;
+            width: 28%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: row;
+        .sectionspace();
+    }
+
+    @media @desktop {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
-.teamimage img{
-    width: 25vh;
+
+#daniel {
+    border-bottom: none;
 }
+
+
+
+
+
