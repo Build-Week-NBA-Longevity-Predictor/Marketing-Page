@@ -155,13 +155,12 @@ nav {
   align-items: center;
   justify-content: center;
   padding-top: 10px;
-  background-color: #e8e8eb;
+  color: white;
 }
 nav h1 {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-  border-bottom: solid 1px black;
 }
 @media (min-width: 500px) {
   nav h1 {
@@ -175,10 +174,9 @@ nav a {
   align-items: center;
   text-decoration: none;
   font-size: 1em;
-  color: black;
+  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: solid 1px black;
 }
 @media (min-width: 500px) {
   nav a {
@@ -222,13 +220,23 @@ footer {
   justify-content: center;
   padding: 10px;
   margin-top: 25px;
-  border-top: 1px solid black;
   font-size: 1em;
-  background-color: #e8e8eb;
+  color: white;
 }
 body {
-  background-image: url("https://files.slack.com/files-pri/T4JUEB3ME-FPMRT6D2L/courtbg.jpg");
-  background-size: 2000px;
+  background-image: url("../Images/courtbg.jpg");
+  background-repeat: no-repeat;
+  background-size: 800% 100%;
+}
+@media (min-width: 500px) {
+  body {
+    background-size: 200% 100%;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-size: 135% 100%;
+  }
 }
 header {
   margin-top: 40px;
@@ -236,6 +244,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 .teammemberA {
   display: flex;
@@ -244,6 +253,7 @@ header {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
+  color: white;
 }
 .teammemberA img {
   width: 30vh;
@@ -277,7 +287,6 @@ header {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 15px;
-    border-bottom: black solid 1px;
   }
 }
 @media (min-width: 1000px) {
@@ -294,6 +303,7 @@ header {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
+  color: white;
 }
 .teammemberB img {
   width: 30vh;
@@ -327,7 +337,6 @@ header {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 15px;
-    border-bottom: black solid 1px;
   }
 }
 @media (min-width: 1000px) {
