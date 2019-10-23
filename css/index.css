@@ -1,0 +1,350 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-size: 1.25em;
+}
+h2 {
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+hr {
+  display: none;
+}
+@media (min-width: 500px) {
+  hr {
+    display: block;
+  }
+}
+.container {
+  min-width: 200px;
+  margin: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+}
+nav h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  nav h1 {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+}
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  nav a {
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    padding: 10px;
+  }
+}
+.navdiv1 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.navdiv2 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 1em;
+  color: white;
+}
+body {
+  background-image: url("../Images/courtbg.jpg");
+  background-repeat: no-repeat;
+  background-size: 800% 100%;
+}
+@media (min-width: 500px) {
+  body {
+    background-size: 200% 100%;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-size: 135% 100%;
+  }
+}
+header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.teammemberA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
+}
+.teammemberA img {
+  width: 30vh;
+  border-radius: 7px;
+}
+@media (min-width: 500px) {
+  .teammemberA .teamintro {
+    width: 70%;
+    margin: 1%;
+  }
+}
+.teammemberA .teamimage {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (min-width: 500px) {
+  .teammemberA .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) {
+  .teammemberA {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .teammemberA {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+.teammemberB {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
+}
+.teammemberB img {
+  width: 30vh;
+  border-radius: 7px;
+}
+@media (min-width: 500px) {
+  .teammemberB .teamintro {
+    width: 70%;
+    margin: 1%;
+  }
+}
+.teammemberB .teamimage {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+@media (min-width: 500px) {
+  .teammemberB .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) {
+  .teammemberB {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .teammemberB {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+#daniel {
+  border-bottom: none;
+}
