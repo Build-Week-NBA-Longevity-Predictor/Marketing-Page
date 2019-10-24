@@ -7,6 +7,7 @@ body{
 
 
     header{
+       
         
     
 
@@ -43,8 +44,7 @@ padding-left: 65px;
 padding-bottom: 2%;
 
 @media @tablet{
-
-       
+    padding-left: 1px;
 }
 
 }
@@ -53,13 +53,11 @@ padding-bottom: 2%;
     width: 100px;
    height: 60px; 
    
-   @media @tablet{
-       margin-right: 15px;
-   }
+  @media @phone{
+      display: none;
+  }
     
-   @media @phone{
-       display: none;
-   }
+ 
   
    
   
@@ -72,19 +70,25 @@ padding-bottom: 2%;
 .input{
 margin-top: 1%;
 height: 15px;      
- margin-left: 25px;    
+ margin-left: 25px;   
+ @media @tablet{
+    margin-right: 45px;
+} 
 
  @media @tablet{
     width: 18%;
     height: 18px;
  }
+ 
     @media @phone{
         
         margin: 0 auto;
-        margin-left: 120px;
-        width: 25%;
+        margin-left: 123px;
+        
     
     }
+
+    
     
     }
 
@@ -93,7 +97,9 @@ height: 15px;
  margin: 0 auto; 
  margin-top: 1%;  
  margin-right: 14%;
+@media @tablet{
 
+}
  
 a{
     
@@ -108,10 +114,14 @@ a{
 
  @media @tablet{
      width: 100%;
-     padding-left: 20px;
+     padding-left: 12px;
      font-size: 16px;
+
  }   
-    
+ @media @675{
+    font-size: 12px;
+    padding-left: 3px;
+}
 @media @phone{
     display: flex;
     justify-content: center;
