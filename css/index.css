@@ -27,13 +27,13 @@ hr {
 }
 @media (min-width: 500px) {
   hr {
-    display: block;
+    display: block;}}
 
 @media (max-width: 500px) {
   body header nav {
     display: inline;
     background: none;
-    margin-top: 1%;
+    
 
   }
 }
@@ -115,7 +115,7 @@ body header nav .a a {
   }
 }
 body {
-  background-image: url('https://files.slack.com/files-pri/T4JUEB3ME-FPMRT6D2L/courtbg.jpg');
+  background-image: url("../Images/courtbg.jpg");
   background-size: 2000px;
 }
 .how-to-use {
@@ -191,7 +191,7 @@ hr {
   .mission-statement {
     margin-top: 7%;
     font-size: 10px;
-
+  }
   .how-to-use {
     margin-right: 2%;
   }
