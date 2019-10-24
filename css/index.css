@@ -17,11 +17,24 @@ body header nav {
     margin-right: 25px;
   }
 }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+hr {
+  display: none;
+}
+@media (min-width: 500px) {
+  hr {
+    display: block;
+
 @media (max-width: 500px) {
   body header nav {
     display: inline;
     background: none;
     margin-top: 1%;
+
   }
 }
 body header nav .logoAndInput {
@@ -137,7 +150,11 @@ body {
   font-weight: bold;
   font-size: 22px;
   color: white;
+
+  font-size: 1.15em;
+
   font-family: Arial, Helvetica, sans-serif;
+
 }
 hr {
   width: 90%;
@@ -155,10 +172,24 @@ hr {
 }
 .nba-images {
   display: flex;
+
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
+  font-size: 1.15em;
+}
+.teammemberB img {
+  width: 30vh;
+  border-radius: 7px;
+
   justify-content: space-around;
   width: 70%;
   margin-top: 3%;
   margin-left: 15%;
+
 }
 @media (max-width: 1000px) {
   .nba-images {
@@ -189,6 +220,8 @@ footer {
   font-weight: bold;
   color: white;
 }
+
+
 @media (max-width: 1000px) {
   footer {
     font-size: 12px;
