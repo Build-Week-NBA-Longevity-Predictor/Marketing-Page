@@ -1,3 +1,4 @@
+
 body {
   background-color: white;
   font-family: sans-serif;
@@ -194,8 +195,12 @@ footer {
     font-size: 12px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   footer {
     padding-top: 0%;
   }
 }
+=======
+
+>>>>>>> d17de7fdc0e93ff33c7ff821c79ee6adeda748ca
