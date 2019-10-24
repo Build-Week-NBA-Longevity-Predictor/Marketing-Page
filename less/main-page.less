@@ -8,7 +8,7 @@ body{
 
 
 
-.mission-statement{
+.how-to-use{
     text-align: center;
     color: white;
     width: 75%;
@@ -23,8 +23,9 @@ body{
     
     @media @phone{
         width: 75%;
-        font-size: 24px;
+        font-size: 18px;
 border-top: none;
+margin-top: 3%;
     }
     
 }
@@ -38,6 +39,7 @@ border-top: none;
     padding-bottom: 2%;
 
     
+ 
     button{
         .button-design(black,white)
 
@@ -55,46 +57,39 @@ border-top: none;
 hr{
 width: 90%;
 margin-top: 1%;
+margin-bottom: 15px;
 
 }
 
-.how-to-use{
+.mission-statement{
     text-align: center;
     margin-top: 15%;
-
-    margin-top: 30%;    
+    color: black;
+    font-size: 20px;
+    margin-top: 30%;   
+    box-sizing: content-box;
+    border: 1px solid black;
+    width: 90%;
+    padding: 4px;
+    background: lightblue;
+    border-radius: 3px; 
+    margin-left: 5%;
 
     @media @phone{
-        margin-right: 2%;
+      
+      margin-top: 7%;
+        font-size: 10px;
+        
+            
     }
+p{
+    font-size: 24px;
+    font-weight: bold;
+    
 }
-
-.nba-images{
-    display: flex;
-   justify-content: space-around;
-   
-    width: 70%;
-    margin-top: 3%;
-    margin-left: 15%;
-
-    @media @tablet{
-        justify-content: space-evenly;
-        width: 90%;
-        margin-left: 5%;
+    @media @phone{
+        margin-right: 2%;
         
     }
-
-    img{
-        width: 20%;
-      
-      border-radius: 20%;
-      height: 250px;
-      @media @tablet{
-        width: 20%;
-        height: 130px;
-        }
-        @media @phone{
-            display:none;
-        }
-    }
 }
+
