@@ -1,0 +1,127 @@
+body {
+    background-image: url("../Images/courtbg.jpg");
+    background-repeat: no-repeat;
+    background-size:  800% 100%;
+
+    @media @tablet {
+        background-size: 200% 100%;
+    }
+
+    @media @desktop {
+    background-size: 135% 100%;
+    }
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: @white;
+}
+
+
+.teammemberA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: @white;
+    font-size: 1.15em;
+
+    img{
+        width: 30vh;
+        border-radius: 7px;
+    }
+
+    .teamintro {
+
+        @media @tablet {
+            width: 70%;
+            margin: 1%
+        }
+    }
+
+    .teamimage {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        @media @tablet {
+            margin: 1%;
+            width: 28%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: row;
+        .sectionspace();
+    }
+
+    @media @desktop {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.teammemberB{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: @white;
+    font-size: 1.15em;
+    
+
+    img{
+        width: 30vh;
+        border-radius: 7px;
+    }
+
+    .teamintro {
+
+        @media @tablet {
+            width: 70%;
+            margin: 1%
+        }
+    }
+
+    .teamimage {
+        margin-bottom: 25px;
+        margin-top: 25px;
+
+        @media @tablet {
+            margin: 1%;
+            width: 28%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: row;
+        .sectionspace();
+    }
+
+    @media @desktop {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+
+
+
+
