@@ -1,23 +1,138 @@
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background-color: white;
-  font-family: sans-serif;
+  line-height: 1;
 }
-body header nav {
-  display: flex;
-  margin-left: 15px;
-  width: 100%;
-  margin: 0 auto;
-  height: 30px;
-  padding-bottom: 25px;
-  padding-left: 65px;
+ol,
+ul {
+  list-style: none;
 }
-@media (max-width: 1000px) {
-  body header nav {
-    margin-right: 25px;
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-size: 1.25em;
+}
+h2 {
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  h2 {
+    font-size: 3em;
   }
 }
-
 h3 {
   font-size: 1.5em;
   font-weight: bold;
@@ -27,178 +142,162 @@ hr {
 }
 @media (min-width: 500px) {
   hr {
-    display: block;}}
-
-@media (max-width: 500px) {
-  body header nav {
-    display: inline;
-    background: none;
-    
-
+    display: block;
   }
 }
-body header nav .logoAndInput {
-  padding-left: 65px;
-  padding-bottom: 2%;
+.container {
+  min-width: 200px;
+  margin: 10px;
 }
-@media (max-width: 1000px) {
-  body header nav .logoAndInput {
-    padding-left: 1px;
-  }
-}
-body header nav .logo {
-  width: 100px;
-  height: 60px;
-}
-@media (max-width: 500px) {
-  body header nav .logo {
-    display: none;
-  }
-}
-body header nav .input {
-  margin-top: 1%;
-  height: 15px;
-  margin-left: 25px;
-}
-@media (max-width: 1000px) {
-  body header nav .input {
-    margin-right: 45px;
-  }
-}
-@media (max-width: 1000px) {
-  body header nav .input {
-    width: 18%;
-    height: 18px;
-  }
-}
-@media (max-width: 500px) {
-  body header nav .input {
-    margin: 0 auto;
-    margin-left: 123px;
-  }
-}
-body header nav .a {
-  margin: 0 auto;
-  margin-top: 1%;
-  margin-right: 14%;
-}
-body header nav .a a {
-  margin-top: 1%;
-  padding-left: 65px;
-  text-decoration: none;
-  font-weight: bold;
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
   color: white;
-  font-size: 20px;
 }
-@media (max-width: 1000px) {
-  body header nav .a a {
-    width: 100%;
-    padding-left: 12px;
-    font-size: 16px;
+nav h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  nav h1 {
+    border-bottom: none;
+    padding-bottom: 0px;
   }
 }
-@media (max-width: 675px) {
-  body header nav .a a {
-    font-size: 12px;
-    padding-left: 3px;
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  nav a {
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
   }
 }
-@media (max-width: 500px) {
-  body header nav .a a {
+@media (min-width: 500px) {
+  nav {
     display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    border-bottom: 1px solid white;
-    padding-bottom: 1%;
-    width: 100%;
-    padding-top: 5%;
+    flex-direction: row;
+    top: 0px;
+    padding: 10px;
   }
+}
+.navdiv1 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.navdiv2 {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .navdiv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 1em;
+  color: white;
 }
 body {
   background-image: url("../Images/courtbg.jpg");
-  background-size: 2000px;
+  background-repeat: no-repeat;
+  background-size: 800% 100%;
 }
-.how-to-use {
-  text-align: center;
-  width: 75%;
-  margin: 0 auto;
-  font-size: 32px;
-  color: white;
-  margin-top: 10%;
-  border-top: 1px solid white;
-}
-@media (max-width: 500px) {
-  .how-to-use {
-    width: 75%;
-    font-size: 18px;
-    border-top: none;
-    margin-top: 3%;
+@media (min-width: 500px) {
+  body {
+    background-size: 200% 100%;
   }
 }
-.button {
+@media (min-width: 1000px) {
+  body {
+    background-size: 135% 100%;
+  }
+}
+header {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  border-bottom: 1px solid white;
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 2%;
-}
-.button button {
-  background-color: black;
-  width: 170px;
-  height: 50px;
-  border: 1px solid black;
-  font-weight: bold;
-  font-size: 22px;
+  flex-direction: column;
+  align-items: center;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
-.button button:hover {
-  background-color: blue;
-  width: 170px;
-  height: 50px;
-  border: 1px solid black;
-  font-weight: bold;
-  font-size: 22px;
+.teammemberA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
   color: white;
-
   font-size: 1.15em;
-
-  font-family: Arial, Helvetica, sans-serif;
-
 }
-hr {
-  width: 90%;
-  margin-top: 1%;
-  margin-bottom: 15px;
+.teammemberA img {
+  width: 30vh;
+  border-radius: 7px;
 }
-.mission-statement {
-  text-align: center;
-  margin-top: 15%;
-  color: black;
-  font-size: 20px;
-  margin-top: 30%;
-  box-sizing: content-box;
-  border: 1px solid black;
-  width: 90%;
-  padding: 4px;
-  background: lightblue;
-  border-radius: 3px;
-  margin-left: 5%;
-}
-@media (max-width: 500px) {
-
-  .mission-statement {
-    margin-top: 7%;
-    font-size: 10px;
-  }
-  .how-to-use {
-    margin-right: 2%;
+@media (min-width: 500px) {
+  .teammemberA .teamintro {
+    width: 70%;
+    margin: 1%;
   }
 }
-.nba-images {
+.teammemberA .teamimage {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (min-width: 500px) {
+  .teammemberA .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) {
+  .teammemberA {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .teammemberA {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+.teammemberB {
   display: flex;
-
   flex-direction: column-reverse;
   align-items: center;
   width: 80%;
@@ -210,47 +309,41 @@ hr {
 .teammemberB img {
   width: 30vh;
   border-radius: 7px;
-
-  justify-content: space-around;
-  width: 70%;
-  margin-top: 3%;
-  margin-left: 15%;
-
 }
-@media (max-width: 1000px) {
-  .nba-images {
-    justify-content: space-evenly;
-    width: 90%;
-    margin-left: 5%;
-
+@media (min-width: 500px) {
+  .teammemberB .teamintro {
+    width: 70%;
+    margin: 1%;
   }
 }
-.mission-statement p {
-  font-size: 24px;
-  font-weight: bold;
+.teammemberB .teamimage {
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
-@media (max-width: 500px) {
-  .mission-statement {
-    margin-right: 2%;
+@media (min-width: 500px) {
+  .teammemberB .teamimage {
+    margin: 1%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-footer {
-  text-align: center;
-  padding-top: 12%;
-  font-weight: bold;
-  color: white;
-}
-
-
-@media (max-width: 1000px) {
-  footer {
-    font-size: 12px;
+@media (min-width: 500px) {
+  .teammemberB {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 15px;
   }
 }
-
-@media (max-width: 500px) {
-  footer {
-    padding-top: 0%;
+@media (min-width: 1000px) {
+  .teammemberB {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
-
